@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>26 Shots, 0 Regerts: Johnny's Nashville Birthday Trip</title>
@@ -687,6 +688,8 @@
                 card.classList.add('expanded');
             });
         });
+        if ('serviceWorker' in navigator) {navigator.serviceWorker.register('sw.js');
+}
     </script>
 </body>
 </html>
